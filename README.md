@@ -11,6 +11,8 @@ Learning Rate = 0.009
 Accuracy on Test Set = 94.181 %
 ```
 
+---
+
 ## 2. [Multi Layer NN](https://github.com/ABD-01/MNIST/tree/main/Multi%20Layer%20Model)
 ####  Uses 4 Linear Layers to train the model which takes 28*28 input features.
 
@@ -25,6 +27,8 @@ Accuracy on Test Set = 94.181 %
   Accuracy on Train Set = 98.272 %
   Accuracy on Test  Set = 98.259 %
 ```
+
+---
 
 ## 3. [Convolutional NN](https://github.com/ABD-01/MNIST/tree/main/CNN%20Model)
 #### This Network comprises of two Convolutional Layers followed by three Fully Connected Layers.
@@ -54,3 +58,5 @@ Network [
   Accuracy on Train Set = 99.58 %
   Accuracy on Test  Set = 98.64 %
 ```
+
+---
