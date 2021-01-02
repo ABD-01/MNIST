@@ -2,7 +2,7 @@
 
 #### Implemented ML Model on [The MNIST Database](http://yann.lecun.com/exdb/mnist/) using 3 different approach.
 
-## 1. [Single Layer NN](https://github.com/ABD-01/MNIST/tree/main/Single%20Layer%20Model)
+## 1. [Single Layer NN](https://github.com/ABD-01/MNIST/blob/main/Single%20Layer%20Model/MNIST_Single%20Layer.ipynb)
 ####  Take input with input features = 28*28. Uses a Single Layer(also the output layer) to implement the model.
   ![Cost vs No. of Iterations](https://github.com/ABD-01/MNIST/blob/main/Single%20Layer%20Model/SingleCost.png)
   
@@ -13,7 +13,7 @@ Accuracy on Test Set = 94.181 %
 
 ---
 
-## 2. [Multi Layer NN](https://github.com/ABD-01/MNIST/tree/main/Multi%20Layer%20Model)
+## 2. [Multi Layer NN](https://github.com/ABD-01/MNIST/blob/main/Multi%20Layer%20Model/MNIST_Using_Multi_Layer.ipynb)
 ####  Uses 4 Linear Layers to train the model which takes 28*28 input features.
 
 #### Network Architecture:
@@ -30,7 +30,7 @@ Accuracy on Test Set = 94.181 %
 
 ---
 
-## 3. [Convolutional NN](https://github.com/ABD-01/MNIST/tree/main/CNN%20Model)
+## 3. [Convolutional NN](https://github.com/ABD-01/MNIST/blob/main/CNN%20Model/MNIST_using_CNN_in_pytorch.ipynb)
 #### This Network comprises of two Convolutional Layers followed by three Fully Connected Layers.
 
 #### Network Architecture:
