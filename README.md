@@ -60,3 +60,7 @@ Network [
 ```
 
 ---
+
+## Others Branches
+* [My solutions to the Assignments of Coursera's course on Deep Learning Specialization](https://github.com/ABD-01/MNIST/tree/DL-Cousera)
+* [My submission to the Kaggle's Digit Recognizer Competition](https://github.com/ABD-01/MNIST/tree/kaggle-digit-recognizer)
