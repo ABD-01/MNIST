@@ -50,15 +50,15 @@ where *A* is an anchor input, *P* is a positive input of the same class as *A*, 
 
   "results": {
     "Class 0": { "correct": 5804, "total": 5923,"acuracy": "97.99%" },
-    "Class 1": { "correct": 6648, "total": 6742,"acuracy": "97.99%" },
-    "Class 2": { "correct": 5830, "total": 5958,"acuracy": "97.99%" },
-    "Class 3": { "correct": 5877, "total": 6131,"acuracy": "97.99%" },
-    "Class 4": { "correct": 5830, "total": 5842,"acuracy": "97.99%" },
-    "Class 5": { "correct": 5274, "total": 5421,"acuracy": "97.99%" },
-    "Class 6": { "correct": 5908, "total": 5918,"acuracy": "97.99%" },
-    "Class 7": { "correct": 5589, "total": 6265,"acuracy": "97.99%" },
-    "Class 8": { "correct": 5777, "total": 5851,"acuracy": "97.99%" },
-    "Class 9": { "correct": 5849, "total": 5949,"acuracy": "97.99%" }
+    "Class 1": { "correct": 6648, "total": 6742,"acuracy": "98.60%" },
+    "Class 2": { "correct": 5830, "total": 5958,"acuracy": "97.85%" },
+    "Class 3": { "correct": 5877, "total": 6131,"acuracy": "95.85%" },
+    "Class 4": { "correct": 5830, "total": 5842,"acuracy": "99.79%" },
+    "Class 5": { "correct": 5274, "total": 5421,"acuracy": "97.28%" },
+    "Class 6": { "correct": 5908, "total": 5918,"acuracy": "99.83%" },
+    "Class 7": { "correct": 5589, "total": 6265,"acuracy": "89.20%" },
+    "Class 8": { "correct": 5777, "total": 5851,"acuracy": "98.73%" },
+    "Class 9": { "correct": 5849, "total": 5949,"acuracy": "98.31%" }
   }
 }
 ```
