@@ -130,5 +130,5 @@ Accuracy on Test Set = 94.181 %
 ---
 
 ## Others Branches
-* [My solutions to the Assignments of Coursera's course on Deep Learning Specialization](https://github.com/ABD-01/MNIST/tree/DL-Cousera)
+* [My solutions to the Assignments of Coursera's course on Deep Learning Specialization](https://github.com/ABD-01/Deep-Learning-Coursera)
 * [My submission to the Kaggle's Digit Recognizer Competition](https://github.com/ABD-01/MNIST/tree/kaggle-digit-recognizer)
