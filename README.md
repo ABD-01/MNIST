@@ -66,7 +66,7 @@ This Siamese Network was used to implement *One Shot Learning* which is a techni
 Images of classes 3 to 9 weren't used while training the model, i.e they were passed to the model for the first time while testing it.
 
 #### Cost
-![Cost vs No. of Iterations](https://github.com/ABD-01/MNIST/blob/main/Triplet%20Loss/loss.png)
+![Cost vs No. of Iterations](Triplet%20Loss/loss.png)
 
 ---
 
@@ -74,7 +74,7 @@ Images of classes 3 to 9 weren't used while training the model, i.e they were pa
 #### This Network comprises of two Convolutional Layers followed by three Fully Connected Layers.
 
 #### Network Architecture:
-<img src='https://github.com/ABD-01/MNIST/blob/main/CNN%20Model/cnn_arch.jpg' alt='CNNArchitecture' width='784'>
+<img src='CNN%20Model/cnn_arch.jpg' alt='CNNArchitecture' width='784'>
 
 ```coffeescript
 Network [
@@ -89,7 +89,7 @@ Network [
 ```
 
 #### Learning Curve:
-  ![Cost vs No. of Iterations](https://github.com/ABD-01/MNIST/blob/main/CNN%20Model/CNN_Cost.png)
+  ![Cost vs No. of Iterations](CNN%20Model/CNN_Cost.png)
   
 ```css
   Batch size = 100
@@ -105,10 +105,10 @@ Network [
 ####  Uses 4 Linear Layers to train the model which takes 28*28 input features.
 
 #### Network Architecture:
-<img src='https://github.com/ABD-01/MNIST/blob/main/Multi%20Layer%20Model/MultiLayerModel.png' alt='MultiLayerArchitecture' width='784'>
+<img src='Multi%20Layer%20Model/MultiLayerModel.png' alt='MultiLayerArchitecture' width='784'>
 
 #### Learning Curve:
-  ![Cost vs No. of Iterations](https://github.com/ABD-01/MNIST/blob/main/Multi%20Layer%20Model/MultiCost.png)
+  ![Cost vs No. of Iterations](Multi%20Layer%20Model/MultiCost.png)
   
 ```css
   Learning Rate = 0.11
@@ -120,7 +120,7 @@ Network [
 
 ## 1. [Single Layer NN](https://github.com/ABD-01/MNIST/blob/main/Single%20Layer%20Model/MNIST_Single%20Layer.ipynb)
 ####  Take input with input features = 28*28. Uses a Single Layer(also the output layer) to implement the model.
-  ![Cost vs No. of Iterations](https://github.com/ABD-01/MNIST/blob/main/Single%20Layer%20Model/SingleCost.png)
+  ![Cost vs No. of Iterations](Single%20Layer%20Model/SingleCost.png)
   
 ```css
 Learning Rate = 0.009  
