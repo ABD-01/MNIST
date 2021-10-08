@@ -1,8 +1,10 @@
 # MNIST Digit Classifier
 
-#### Implemented ML Model on [The MNIST Database](http://yann.lecun.com/exdb/mnist/) using different approaches.
+[[_TOC_]]
 
-## 4. [Siamese NN (with Triplet Loss)](https://github.com/ABD-01/MNIST/blob/main/Triplet%20Loss/TRIPLET_LOSS_Pytorch.ipynb)
+#### Implemented various models on [The MNIST Database](http://yann.lecun.com/exdb/mnist/) using different approaches to learn new stuff.
+
+## 4. [Triplet NN (with Triplet Loss)](https://github.com/ABD-01/MNIST/blob/main/Triplet%20Loss/TRIPLET_LOSS_Pytorch.ipynb)
 
 Implemented a convolutional network that learns to generate encodings of passed images such as to minimize the triplet loss function given by :
 
@@ -10,7 +12,7 @@ Implemented a convolutional network that learns to generate encodings of passed 
 
 where *A* is an anchor input, *P* is a positive input of the same class as *A*, *N* is a negative input of a different class from *A*, 𝜶 is a margin between positive and negative pairs, and *f* is an embedding.
 
-#### Network Architechture
+<!-- #### Network Architechture
 ```json
 {
   "name": "Model",
@@ -61,22 +63,58 @@ where *A* is an anchor input, *P* is a positive input of the same class as *A*, 
     "Class 9": { "correct": 5849, "total": 5949,"acuracy": "98.31%" }
   }
 }
-```
-This Siamese Network was used to implement *One Shot Learning* which is a technique of learning representations from a single sample.
+``` -->
+The Network was used to implement *One Shot Learning* which is a technique of learning representations from a single sample.
 Images of classes 3 to 9 weren't used while training the model, i.e they were passed to the model for the first time while testing it.
 
-#### Cost
-![Cost vs No. of Iterations](Triplet%20Loss/loss.png)
+### Training
+
+| Parameter     |                    Value                    |
+|---------------|:-------------------------------------------:|
+| TrainSet      | 100 images each of `0`, `1` and `2` classes |
+| TestSet       |       60,000 images of all ten classes      |
+| Loss          |                 Triplet Loss                |
+| Learning Rate |                    0.001                    |
+| Batch Size    |                      10                     |
+| Epochs        |                      5                      |
+| Optimizer     |                     Adam                    |
+
+### Results
+
+| Class | Accuracy | Correct | Total |
+|:-----:|:--------:|:-------:|:-----:|
+|   0   |  97.99%  |   5804  |  5923 |
+|   1   |  98.60%  |   6648  |  6742 |
+|   2   |  97.85%  |   5830  |  5958 |
+|   3   |  95.85%  |   5877  |  6131 |
+|   4   |  99.79%  |   5830  |  5842 |
+|   5   |  97.28%  |   5274  |  5421 |
+|   6   |  99.83%  |   5908  |  5918 |
+|   7   |  89.20%  |   5589  |  6265 |
+|   8   |  98.73%  |   5777  |  5851 |
+|   9   |  98.31%  |   5849  |  5949 |
+
+### Plot
+![Cost vs No. of Iterations](Triplet%20Loss/Tripletloss.jpeg)
 
 ---
 
 ## 3. [Convolutional NN](https://github.com/ABD-01/MNIST/blob/main/CNN%20Model/MNIST_using_CNN_in_pytorch.ipynb)
-#### This Network comprises of two Convolutional Layers followed by three Fully Connected Layers.
 
-#### Network Architecture:
-<img src='CNN%20Model/cnn_arch.jpg' alt='CNNArchitecture' width='784'>
+Trained a Convolutional Neural Network with two layers. Used mini-batches 
 
-```coffeescript
+### Training
+
+| Parameter     |     Value     |
+|---------------|:-------------:|
+| TrainSet      |     60,000    |
+| TestSet       |     10,000    |
+| Loss          | Cross Entropy |
+| Learning Rate |     0.002     |
+| Batch Size    |      100      |
+| Epochs        |       50      |
+
+<!-- ```coffeescript
 Network [
   Conv1    : [in_channels=1, out_channels=6, kernel_size=5, stride=1],
   MaxPool1 : [kernel_size=2, stride=2],
@@ -86,46 +124,86 @@ Network [
   FC2      : [in_features=120, out_features=60],
   Output   : [in_features=60, out_features=10],
 ]
-```
+``` -->
 
-#### Learning Curve:
-  ![Cost vs No. of Iterations](CNN%20Model/CNN_Cost.png)
+### Summary
+
+| Result         |  Value |
+|----------------|:------:|
+| Train Accuracy | 99.40% |
+| Train Correct  |  59641 |
+| Test Accuracy  | 98.59% |
+| Test Correct   |  9859  |
+
+#### Plot
+![Cost vs No. of Iterations](CNN%20Model/CNNCost.jpeg)
+![Acc. vs No. of Iterations](CNN%20Model/CNNacc.jpeg)
   
-```css
-  Batch size = 100
-  Learning Rate = 0.002
-  iterations = 50
-  Accuracy on Train Set = 99.58 %
-  Accuracy on Test  Set = 98.64 %
-```
+---
+
+## 2. [Multi Layer NN (NumPy)](https://github.com/ABD-01/MNIST/blob/main/Multi%20Layer%20Model/MNIST_Using_Multi_Layer.ipynb)
+
+Trained a Mulit-Layer Neural Net in NumPy.
+The model has 4 layers with 512, 128, 32, 10 neurons respectively.
+
+### Training
+
+| Parameter     |     Value     |
+|---------------|:-------------:|
+| TrainSet      |     60,000    |
+| TestSet       |     10,000    |
+| Loss          | Cross Entropy |
+| Learning Rate |      0.11     |
+| Batch Size    |       -       |
+| Epochs        |      1000     |
+
+### Summary
+
+| Result         |  Value |
+|----------------|:------:|
+| Train Loss     |  0  |
+| Train Accuracy | 0 |
+| Train Correct  |  0 |
+| Test Loss      |  0  |
+| Test Accuracy  | 0 |
+| Test Correct   |  0  |
+
+### Plot
+
+![Cost vs No. of Iterations](Multi%20Layer%20Model/MultiCost.jpeg)
 
 ---
 
-## 2. [Multi Layer NN](https://github.com/ABD-01/MNIST/blob/main/Multi%20Layer%20Model/MNIST_Using_Multi_Layer.ipynb)
-####  Uses 4 Linear Layers to train the model which takes 28*28 input features.
+## 1. [Single Layer NN (NumPy)](https://github.com/ABD-01/MNIST/blob/main/Single%20Layer%20Model/MNIST_Single%20Layer.ipynb)
 
-#### Network Architecture:
-<img src='Multi%20Layer%20Model/MultiLayerModel.png' alt='MultiLayerArchitecture' width='784'>
+A single layer Neural Net implemented using NumPy library.
 
-#### Learning Curve:
-  ![Cost vs No. of Iterations](Multi%20Layer%20Model/MultiCost.png)
-  
-```css
-  Learning Rate = 0.11
-  Accuracy on Train Set = 98.272 %
-  Accuracy on Test  Set = 98.259 %
-```
+### Training
 
----
+| Parameter     |     Value     |
+|---------------|:-------------:|
+| TrainSet      |     60,000    |
+| TestSet       |     10,000    |
+| Loss          | Cross Entropy |
+| Learning Rate |     0.009     |
+| Batch Size    |       -       |
+| Epochs        |      2000     |
 
-## 1. [Single Layer NN](https://github.com/ABD-01/MNIST/blob/main/Single%20Layer%20Model/MNIST_Single%20Layer.ipynb)
-####  Take input with input features = 28*28. Uses a Single Layer(also the output layer) to implement the model.
-  ![Cost vs No. of Iterations](Single%20Layer%20Model/SingleCost.png)
-  
-```css
-Learning Rate = 0.009  
-Accuracy on Test Set = 94.181 %
-```
+### Summary
+
+| Result         |  Value |
+|----------------|:------:|
+| Train Loss     |  0.50  |
+| Train Accuracy | 93.98% |
+| Train Correct  |  52507 |
+| Test Loss      |  0.80  |
+| Test Accuracy  | 94.18% |
+| Test Correct   |  8836  |
+
+### Plot
+
+![Cost vs No. of Iterations](Single%20Layer%20Model/SingleCost.jpeg)
+
 
 ---
 
