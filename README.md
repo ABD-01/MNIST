@@ -1,6 +1,11 @@
 # MNIST Digit Classifier
 
-[[_TOC_]]
+## Table of Content
+
+* [Triplet Network](#4-triplet-nn-with-triplet-loss)
+* [Convolutional Network](#3-convolutional-nn)
+* [Multi Layer Network (NumPy)](#2-multi-layer-nn-numpy)
+* [Single Layer Network (NumPy)](#1-single-layer-nn-numpy)
 
 #### Implemented various models on [The MNIST Database](http://yann.lecun.com/exdb/mnist/) using different approaches to learn new stuff.
 
@@ -161,12 +166,10 @@ The model has 4 layers with 512, 128, 32, 10 neurons respectively.
 
 | Result         |  Value |
 |----------------|:------:|
-| Train Loss     |  0  |
-| Train Accuracy | 0 |
-| Train Correct  |  0 |
-| Test Loss      |  0  |
-| Test Accuracy  | 0 |
-| Test Correct   |  0  |
+| Train Accuracy | 98.27% |
+| Train Correct  |  57291 |
+| Test Accuracy  | 98.26% |
+| Test Correct   |  9505  |
 
 ### Plot
 
