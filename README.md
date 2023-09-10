@@ -1,5 +1,11 @@
 # MNIST Digit Classifier
 
+
+
+
+https://github.com/ABD-01/MNIST/assets/63636498/b527f1b6-fa8e-4e72-9b98-35b5f0275e82
+
+
 ## Table of Content
 
 * [Triplet Network](#4-triplet-nn-with-triplet-loss)
