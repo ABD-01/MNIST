@@ -1,10 +1,6 @@
 # MNIST Digit Classifier
 
-
-
-
-https://github.com/ABD-01/MNIST/assets/63636498/b527f1b6-fa8e-4e72-9b98-35b5f0275e82
-
+![ezgif com-video-to-gif](https://github.com/ABD-01/MNIST/assets/63636498/06c54346-6cc8-4ceb-97aa-1c80d4d007f9)
 
 ## Table of Content
 
